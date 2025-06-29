@@ -1,0 +1,80 @@
+---
+// src/pages/authors/index.astro
+import { getStoriesWithAuthors } from '../../utils/collections';
+import type { StoryWithAuthor } from '../../utils/collections';
+import BaseHTML from '../../layouts/BaseHTML.astro';
+
+// Define a more detailed type for our author data structure
+type AuthorWithStoryList = {
+    name: string;
+    slug: string;
+    stories: { title: string; slug: string }[];
+};
+
+// 1. Fetch all stories with their authors using our reusable function.
+const storiesWithAuthors = await getStoriesWithAuthors();
+
+// 2. Create a map to group stories under each author.
+const authorsMap = new Map<string, AuthorWithStoryList>();
+
+for (const { story, author } of storiesWithAuthors) {
+    if (author) {
+        // Get the existing author data or create a new entry if it's the first time we see them.
+        const existingAuthor = authorsMap.get(author.slug) ?? {
+            name: author.data.name,
+            slug: author.slug,
+            stories: [],
+        };
+
+        // Add the current story to their list.
+        existingAuthor.stories.push({
+            title: story.data.title,
+            slug: story.slug,
+        });
+
+        authorsMap.set(author.slug, existingAuthor);
+    }
+}
+
+// 3. Convert the map to an array and sort it alphabetically by author name.
+const sortedAuthors = Array.from(authorsMap.values()).sort((a, b) =>
+    a.name.localeCompare(b.name)
+);
+
+// Optional but recommended: Sort the stories for each author alphabetically.
+sortedAuthors.forEach(author => {
+    author.stories.sort((a, b) => a.title.localeCompare(b.title));
+});
+---
+
+<BaseHTML meta={{ title: 'All Authors', description: 'Browse the list of authors and their stories featured in Narwhal Magazine.' }}>
+    <main class="container mx-auto max-w-3xl px-4 py-12">
+        <header class="mb-10 text-center">
+            <h1 class="text-5xl font-bold">All Authors</h1>
+            <p class="mt-4 text-xl text-gray-600">Discover the talented writers of Narwhal Magazine.</p>
+        </header>
+
+        <div class="space-y-8">
+            <!-- 4. Loop through the sorted authors and display their info and story list -->
+            {sortedAuthors.map(author => (
+                    <section class="author-section rounded-lg border bg-white p-6 shadow-sm" aria-labelledby={`author-heading-${author.slug}`}>
+                        <a href={`/authors/${author.slug}/`}>
+                            <h2 id={`author-heading-${author.slug}`} class="text-3xl font-bold text-gray-900 transition-colors hover:text-blue-700 hover:underline">
+                                {author.name}
+                            </h2>
+                        </a>
+
+                        <ul class="mt-4 list-inside list-disc space-y-2 pl-2">
+                            {author.stories.map(story => (
+                                    <li>
+                                        <a href={`/stories/${story.slug}/`} class="text-lg text-blue-600 hover:underline">
+                                            {story.title}
+                                        </a>
+                                    </li>
+                            ))}
+                        </ul>
+                    </section>
+            ))}
+        </div>
+    </main>
+</BaseHTML>

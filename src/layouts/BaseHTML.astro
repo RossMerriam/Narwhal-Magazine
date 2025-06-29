@@ -1,0 +1,100 @@
+---
+import "@/styles/global.css";
+import type { PageMeta } from '@/interfaces/PageMeta';
+import { siteConfig } from '@/utils/site.config';
+import SiteHeader from '@/components/SiteHeader.astro';
+
+interface Props {
+    meta?: PageMeta; // The 'meta' prop is optional
+    bodyClasses?: string; // Optional prop for body classes, if you use it
+}
+
+// Destructure the props, providing a default empty object for 'meta'
+const { meta = {}, bodyClasses } = Astro.props;
+
+// Construct the full URL for the current page
+const currentUrl = new URL(Astro.url.pathname, siteConfig.siteUrl).href;
+
+// Merge provided meta with defaults from siteConfig
+// This logic prioritizes:
+// 1. Explicitly provided 'meta' prop values
+// 2. Fallback to 'meta' prop's 'title'/'description' if specific OG/metaTitle/metaDescription are not set
+// 3. Fallback to siteConfig defaults
+// 4. Fallback to hardcoded defaults (e.g., 'website' for ogType)
+const pageMeta: PageMeta = {
+    // Main Title & Description (used for <title> and default meta description)
+    title: meta.title || siteConfig.defaultTitle,
+    description: meta.description || siteConfig.defaultDescription,
+
+    // Open Graph (OG) properties
+    ogTitle: meta.ogTitle || meta.title || siteConfig.defaultOgTitle || siteConfig.defaultTitle,
+    ogDescription: meta.ogDescription || meta.description || siteConfig.defaultOgDescription || siteConfig.defaultDescription,
+    ogType: meta.ogType || siteConfig.defaultOgType || 'website', // Default to 'website' if not specified
+    ogUrl: meta.ogUrl || currentUrl, // Default to current page URL
+    ogImage: meta.ogImage || siteConfig.defaultOgImage, // Default to site-wide OG image
+
+    // Standard SEO meta tags (can be distinct from OG)
+    metaTitle: meta.metaTitle || meta.title || siteConfig.defaultMetaTitle || siteConfig.defaultTitle,
+    metaDescription: meta.metaDescription || meta.description || siteConfig.defaultMetaDescription || siteConfig.defaultDescription,
+    canonicalUrl: meta.canonicalUrl || currentUrl, // Default to current page URL
+
+    // Schema.org properties
+    schemaType: meta.schemaType || siteConfig.defaultSchemaType || 'WebPage', // Default to 'WebPage'
+    schemaName: meta.schemaName || meta.title || siteConfig.defaultSchemaName || siteConfig.defaultTitle,
+    schemaDescription: meta.schemaDescription || meta.description || siteConfig.defaultSchemaDescription || siteConfig.defaultDescription,
+    schemaUrl: meta.schemaUrl || currentUrl, // Default to current page URL
+};
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{pageMeta.metaTitle}</title>
+    <meta name="description" content={pageMeta.metaDescription}>
+    <link rel="canonical" href={pageMeta.canonicalUrl}>
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- Open Graph (for social media sharing) -->
+    <meta property="og:title" content={pageMeta.ogTitle}>
+    <meta property="og:description" content={pageMeta.ogDescription}>
+    <meta property="og:type" content={pageMeta.ogType}>
+    <meta property="og:url" content={pageMeta.ogUrl}>
+    {pageMeta.ogImage && <meta property="og:image" content={pageMeta.ogImage}>}
+    <!-- Add more OG tags if needed, e.g., og:image:alt, og:locale -->
+
+    <!-- Schema Markup (for structured data) -->
+    <script type="application/ld+json">
+        {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": pageMeta.schemaType,
+            "name": pageMeta.schemaName,
+            "description": pageMeta.schemaDescription,
+            "url": pageMeta.schemaUrl
+            // Add more schema properties here if they are part of your PageMeta interface
+            // and you want them in the default schema.
+        }, null, 2)}
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T36FK43F');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/aui0nvt.css">
+    <!-- End Adobe Fonts -->
+
+</head>
+<body class={bodyClasses}>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T36FK43F"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <SiteHeader />
+    <slot />
+</body>
+</html>

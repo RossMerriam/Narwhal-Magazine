@@ -1,1 +1,13 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+    --font-serif: "mrs-eaves", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    --font-sans: "futura-pt", Arial,Helvetica Neue,Helvetica,sans-serif;
+    --font-header: "mrs-eaves", Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+    --primary-color: var(--color-blue-500);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-serif), serif;
+}
