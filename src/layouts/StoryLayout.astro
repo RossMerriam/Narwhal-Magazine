@@ -16,8 +16,6 @@ const { data } = story;
 // 1. This line fetches the full author object using the reference from the story.
 const author = data.author ? await getEntry('authors', data.author) : null;
 
-console.log('author', author);
-
 // ... (pageMeta logic remains the same)
 const pageMeta: PageMeta = {
     title: data.title,
