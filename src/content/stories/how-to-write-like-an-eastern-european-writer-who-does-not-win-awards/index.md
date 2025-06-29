@@ -1,6 +1,6 @@
 ---
 title: 'How to Write Like an Eastern European Writer Who Does Not Win Awards'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'A tongue-in-cheek instructional guide for the aspiring literary artist. Abandon proper grammar, master the art of self-deprecating jokes, and learn to look as though you are hiding a deep, unknowable pain. Your path to un-decorated genius starts here.'
 author: 'igor-rybak'
 issue: 'Archives: 2008-2009'
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'The Vampire With Braces'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: "Frank is a terrible vampire. He hugs instead of bites, cuddles his stuffed animals, and was born on Valentine's Day. But when the vampodontist delivers the ultimate humiliation—braces—Frank finally finds his own path out of the darkness and into the human world."
 author: 'rhiannon-lotze'
 issue: 'Archives: 2009-2010'
 ---

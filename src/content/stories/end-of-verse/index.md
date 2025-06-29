@@ -1,7 +1,7 @@
 ---
 # --- Core Fields (Required) ---
 title: 'The End of Verse'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: "On a mission to buy sugar, a young man is instead swept up by a newfound love, returning home with empty pockets and a heart full of poetry. His confession, much to his family's chagrin, marks the definitive end of verse. A charming, whimsical story told in one breathless sentence."
 author: 'igor-rybak'
 issue: 1 
 ---

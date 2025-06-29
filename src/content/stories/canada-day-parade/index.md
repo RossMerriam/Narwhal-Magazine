@@ -1,6 +1,6 @@
 ---
 title: 'Canada Day Parade'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'When the Queen’s limousine vanishes during a parade, a nation’s polite facade begins to crumble. Told through a series of frantic messages, this is a story of bureaucratic absurdity, romantic rivalries, and a search for a monarch gone astray.'
 author: 'igor-rybak'
 issue: 'Archives: 2009-2010'
 ---

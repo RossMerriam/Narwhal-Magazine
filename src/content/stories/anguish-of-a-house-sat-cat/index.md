@@ -1,6 +1,6 @@
 ---
 title: 'Anguish of a House-Sat Cat'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'A refined feline’s world is shattered when the house-sitter relegates him to canned food, locking the salmon steaks away in the freezer. Deprived of his due, he must choose between smothering the offender with affection or unleashing a fury that can no longer be contained.'
 author: 'marty-bachman'
 issue: 'Archives: 2008-2009'
 ---

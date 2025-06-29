@@ -1,7 +1,7 @@
 ---
 # --- Core Fields (Required) ---
 title: 'Herring Bones and Moon Rock'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'Buck Ramer trades one Rock—Newfoundland—for another: the Moon. This sprawling, multi-generational saga follows a family through prospecting, love, loss, and alcoholism, all under the silent watch of a distant Earth. A poignant tale of what it means to search for home, whether on a planet or its satellite.'
 author: 'geoff-cole'
 issue: 2
 ---

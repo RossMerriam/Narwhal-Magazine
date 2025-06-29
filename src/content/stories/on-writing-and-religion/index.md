@@ -1,7 +1,7 @@
 ---
 # --- Core Fields (Required) ---
 title: 'On Writing and Religion; or, Indefinite Directions to the End of Language'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'Is it blasphemous to have a Chekhovian voice? In a series of sharp, witty aphorisms, the act of writing is compared to playing the piano and praying, exploring the indefinite directions to the end of language itself.'
 author: 'igor-rybak'
 issue: 2
 ---

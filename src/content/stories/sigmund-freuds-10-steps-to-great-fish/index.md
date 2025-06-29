@@ -1,6 +1,6 @@
 ---
 title: 'Sigmund Freud’s 10 Steps to Great Fish'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: "Cooking fish is never just cooking fish. It is a psycho-culinary journey involving forbidden thoughts, the memory of your mother's disappointment, and the delicate balance between perfectly cooked and overcooked. Please, don't pound the fish."
 author: 'rebecca-coffey'
 issue: 'Archives: 2009-2010'
 ---

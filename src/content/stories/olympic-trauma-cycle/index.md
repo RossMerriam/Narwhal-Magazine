@@ -1,6 +1,6 @@
 ---
 title: 'Olympic Trauma Cycle'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'After his girlfriend sublets their apartment during the Vancouver Olympics, a man is cast adrift in his own city. Chronicling his misadventures through a series of frantic online posts, he navigates shrimp-scented coats, horrifyingly messy hosts, and a suspiciously clean couple named "Raychel" in a desperate search for a place to sleep.'
 author: 'jacob-blanco'
 issue: 1
 --- 

@@ -1,7 +1,7 @@
 ---
 # --- Core Fields (Required) ---
 title: "The Cowboy's Last Lament"
-description: 'A cowboys last lament'
+description: 'He was a cowboy who did everything hard—especially love. After his wife’s unfortunate demise-by-bison, he sets his sights on a local widow in a beekeeping suit, all while pondering life’s great mysteries from behind his imitation Thor helmet. A story where the fanny pack is as soulful as the hero.'
 author: 'darren-springer'
 issue: 1
 ---

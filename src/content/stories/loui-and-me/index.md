@@ -1,6 +1,6 @@
 ---
 title: 'Loui and Me'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'When a friend asks you to look after his tiger for two weeks, you say yes. But what begins with building a fence in the yard evolves into a quiet shifting of power, until you find yourself living outside, gazing up at the tiger who now occupies your bedroom window.'
 author: 'michal-kozlowski'
 issue: 'Archives: 2009-2010'
 ---

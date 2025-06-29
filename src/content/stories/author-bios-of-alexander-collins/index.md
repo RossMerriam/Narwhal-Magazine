@@ -1,6 +1,6 @@
 ---
 title: 'The Author Bios of Alexander Collins'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'Which author bio is most appropriate for a story? Is it the one that speaks to the lonely path of the writer, or the one that blames his father for a petit bourgeois lifestyle? An author’s letter to the editor becomes a hilarious, meta-fictional exploration of the personae we construct.'
 author: 'alexander-collins'
 issue: 1
 ---

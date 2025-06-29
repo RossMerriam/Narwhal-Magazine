@@ -1,6 +1,6 @@
 ---
 title: 'Wishes for Sweeping Romance'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: "For Derek and Jane, a wedding wish for a romance of epic proportions, illustrated by the tale of Carlos de Cervantes Garcia, who heard his love's name on the sea wind, and Bonita de Flores Perdes, who swept the steps of a fabric shop and inspired the throwing of a barrel of salted sardines at pirates."
 author: 'pablo-garcia'
 issue: 'Archives: 2009-2010'
 ---

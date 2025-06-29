@@ -1,6 +1,6 @@
 ---
 title: 'B.L.T Rider'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'A man on the run pulls into a desolate diner for a simple meal. But in a town where the inhabitants are as cracked as the linoleum floor, ordering a bacon and tomato sandwich can be a fatal mistake.'
 author: 'racan-souiedan'
 issue: 'Archives: 2008-2009'
 ---

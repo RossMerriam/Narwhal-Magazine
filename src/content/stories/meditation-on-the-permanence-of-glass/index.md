@@ -1,6 +1,6 @@
 ---
 title: 'Meditation on the Permanence of Glass'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'When a bird hits a window, who is to blame? The bird? The window? Or the window cleaner, whose impeccable work made the glass invisible? A brief, spiraling reflection on pride, perspective, and the unintended consequences of a job well done.'
 author: 'sal-jackson'
 issue: 'Archives: 2009-2010'
 ---

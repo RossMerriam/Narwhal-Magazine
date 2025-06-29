@@ -1,6 +1,6 @@
 ---
 title: 'Wishes for Your Journey'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'What does one wish for a marriage? Perhaps a straight road, but one with gentle, exciting turns. One with pleasant scenery, adequate sunscreen, and agreeable passengers. A warm, charming poem for a life-long journey.'
 author: 'pablo-garcia'
 issue: 'Archives: 2008-2009'
 ---

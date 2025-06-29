@@ -1,6 +1,6 @@
 ---
 title: 'Antonia'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'In the suffocating grip of a heatwave, a woman named Antonia begins to sweat pools of salt. As a frail, daydreaming doctor and his inept intern fail to diagnose her, the apartment itself begins to weep, blurring the line between fever and reality.'
 author: 'michal-kozlowski'
 issue: 'Archives: 2008-2009'
 ---

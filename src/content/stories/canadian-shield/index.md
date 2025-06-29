@@ -1,6 +1,6 @@
 ---
 title: 'Canadian Shield'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'At a book launch for a celebrated Canadian writer, a young Eastern European intellectual prepares to strike with his scathing critique. But his plans are complicated by surprisingly good cheesecake and the unshakable politeness of his target. A wry look at cultural envy and the quiet battles of the literary world.'
 author: 'igor-rybak'
 issue: 'Archives: 2008-2009'
 ---

@@ -1,6 +1,6 @@
 ---
 title: 'Sentence Types'
-description: 'A tale of a mystical journey through arctic waters under a celestial dance.'
+description: 'A run-on sentence is written as a bus crashes into a lamppost; a compound sentence is written in jail. This playful, poetic glossary deconstructs the building blocks of language, revealing the life behind the words.'
 author: 'igor-rybak'
 issue: 'Archives: 2008-2009'
 ---
