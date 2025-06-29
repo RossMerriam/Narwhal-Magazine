@@ -1,47 +1,35 @@
-# Astro Starter Kit: Minimal
+# Narwhal Magazine
 
-```sh
-npm create astro@latest -- --template minimal
-```
+![Narwhal Magazine](public/social-card.png) <!-- Optional: Add a social sharing image to your public folder -->
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+This is the official repository for Narwhal Magazine, a modern literary magazine built with Astro. The site is designed to be fast, content-focused, and easy to manage.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+**Live Site:** www.narwhalmagazine.com <!-- Replace with your actual URL -->
+
+## ✨ Key Features
+
+*   **Framework**: Built with Astro for unparalleled performance and a great developer experience.
+*   **Styling**: Styled with Tailwind CSS for a utility-first workflow.
+*   **Content**: Powered by Astro Content Collections for type-safe and organized stories and author profiles.
+*   **Components**: Features a reusable component-based architecture.
+*   **Image Handling**: Uses Astro's built-in `<Image />` component for automatic optimization of images and comics.
+*   **Forms**: Includes a submissions page with a contact form handled by Netlify Forms.
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
+The project follows a standard Astro project structure to keep things organized and maintainable.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🛠️ Getting Started
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Follow these steps to get a local copy of the project up and running.
 
-Any static assets, like images, can be placed in the `public/` directory.
+### Prerequisites
 
-## 🧞 Commands
+*   Node.js (v18.0 or higher)
+*   pnpm (recommended), npm, or yarn
 
-All commands are run from the root of the project, from a terminal:
+### Installation
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+1.  **Clone the repository:**
+    
